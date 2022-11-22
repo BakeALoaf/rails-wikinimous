@@ -1,0 +1,7 @@
+<%= form_with model: @wiki, url: create_wiki_path do |w| %>
+  <%= w.label :title %>
+  <%= w.text_field :title %>
+    <%= w.label :content %>
+  <%= w.text_field :content %>
+  <%= w.submit %>
+<% end %>

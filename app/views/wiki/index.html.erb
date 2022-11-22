@@ -1,0 +1,6 @@
+<h1>Article list</h1>
+
+<% @wikis.each do |wik| %>
+<li><%=link_to wik.title, wikis_path(wik)%></li>
+<% end %>
+<%= link_to "Add an Article", wiki_new_path %>

@@ -1,0 +1,6 @@
+<h1>Article Selected</h1>
+
+<h2><%= @wiki.content %></h2>
+<%= link_to "Article List", wiki_path %>
+<%= link_to "Edit", edit_article_path(@wiki)%><br>
+<%= link_to "Delete", delete_wiki_path, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>

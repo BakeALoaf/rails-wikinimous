@@ -1,0 +1,9 @@
+<h1>Edit an existing article</h1>
+
+<%= form_with model: @wiki, url: update_wiki_path do |w| %>
+  <%= w.label :title %>
+  <%= w.text_field :title %>
+    <%= w.label :content %>
+  <%= w.text_field :content %>
+  <%= w.submit %>
+<% end %>
